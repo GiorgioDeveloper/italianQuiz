@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Italian Quiz</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="stylesheets/italianquiz.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div id="home">
+      <p>
+        PLAY AND LEARN ITALIAN IN THE FASTEST WAY!!<br /><br />Starting from 100
+        points, the score decreases 1 point every second, and freeze after every
+        answer<br /><br />Correct answers<span style="color:#3dc21b">
+          +10 points</span
+        ><br />Incorrect answers<span style="color:#f24437"> -10 points</span
+        ><br /><br />The final score will define your italian level
+      </p>
+      <button class="btn-home" id="btn0">GIOCA!</button>
+    </div>
+
+    <div id="final-section" class="display">
+      <h1>
+        <span class="final-comment">GAME OVER!! FINITO!</span><br /><br />YOUR
+        SCORE IS: <span class="final-score">0</span><br /><br /><span
+          class="final-comment2"
+          >YOU BETTER LEARN SWEDISH GESTURES</span
+        >
+      </h1>
+      <div class="image-wrapper">
+        <p class="btn-final-page">Play again!</p>
+      </div>
+    </div>
+
+    <section id="game-section" class="flex-container">
+      <div>
+        <!-- <video width="400" autoplay loop muted> -->
+        <video autoplay muted id="myGifTag">
+          <source src="GIF/Gesto1.MOV" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="central-column">
+        <div class="answers">
+          <button class="btn button" id="btn1">Answer 1</button>
+          <button class="btn button" id="btn2">Answer 2</button>
+          <button class="btn button" id="btn3">Answer 3</button>
+        </div>
+
+        <div id="feedback">
+          <img src="" />
+        </div>
+
+        <button class="button" id="btn4">PLAY NEXT >>></button>
+      </div>
+
+      <div class="scores">
+        <h2 id="timer">Score: <br /><span id="time">100</span></h2>
+        <h2>Question: <span id="questionNumber">1</span>/25</h2>
+      </div>
+    </section>
+    <script type="text/javascript" src="src/jquery-3.4.1.min (1).js"></script>
+    <script type="text/javascript" src="src/questions.js"></script>
+    <script type="text/javascript" src="./src/gameLogic.js"></script>
+    <script type="text/javascript" src="src/italianquiz.js"></script>
+  </body>
+</html>
